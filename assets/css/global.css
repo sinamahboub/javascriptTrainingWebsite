@@ -1,0 +1,183 @@
+:root {
+    --yellow: #f0db4f;
+    --black: #323330;
+
+    scroll-behavior: smooth;
+    font-family: "iSans" !important;
+}
+
+* {
+    color: var(--black);
+}
+
+container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "iSans";
+    src: url("../../admin/fonts/IRANSansWeb.eot") format("eot"),
+    url("../../admin/fonts/IRANSansWeb.woff2") format("woff2"),
+    url("../../admin/fonts/IRANSansWeb.woff") format("woff");
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    font-family: "iSans";
+}
+
+.middleText {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+    color: var(--yellow);
+    background-color: var(--black);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.cardBody {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: column;
+    background-color: var(--black);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.cardBody .cardLogo {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.cardBody .cardLogo img {
+    width: 140px;
+    border-radius: 50%;
+}
+
+.cardBody .cardTitle {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin-top: 15px;
+}
+
+.cardBody .cardTitle h3 {
+    color: var(--yellow);
+}
+
+.cardBody .cardText {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.cardBody .cardText h5 {
+    color: rgb(243, 225, 111);
+    text-align: center;
+}
+
+.cardBody .cardBtn {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.cardBody .cardBtn a button {
+    width: 150px;
+    height: 40px;
+    border: 3px solid var(--yellow);
+    border-radius: 8px;
+    color: var(--yellow);
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 300ms;
+}
+
+.cardBody .cardBtn a button:hover {
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+#upBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 100%;
+    background-color: var(--black);
+    opacity: 0;
+    animation: oLoad 1s 1 forwards;
+}
+
+#upBtn img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  scrollbar                                 */
+/* -------------------------------------------------------------------------- */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--yellow);
+    border-radius: 12px;
+    box-shadow: inset 0 0 3px var(--black);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 /scrollbar                                 */
+/* -------------------------------------------------------------------------- */
+
