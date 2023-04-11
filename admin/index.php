@@ -1,3 +1,10 @@
+<?php
+require_once "./checkLogin.php";
+require_once "./assets/php/autoload.php";
+
+$Msg = new Msg();
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,6 +15,10 @@
     <title>Document</title>
 </head>
 <body>
+<?php $Msg->show() ?>
 
+<?php require_once "./include/menu.php" ?>
+
+<script src="./assets/js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,10 @@
+:root{
+    font-family: "iSans";
+}
+
+@font-face {
+    font-family: "iSans";
+    src: url("./../fonts/IRANSansWeb.eot") format("eot"),
+    url("./../fonts/IRANSansWeb.woff2") format("woff2"),
+    url("./../fonts/IRANSansWeb.woff") format("woff");
+}
